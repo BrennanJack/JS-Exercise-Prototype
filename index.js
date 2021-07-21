@@ -93,12 +93,7 @@ Car.prototype.drive = function(distance) {
 }
 
 
-let pos = new Car('shitstick', 2);
-console.log(pos);
-pos.fill(10);
-console.log(pos);
-pos.drive(10);
-console.log(pos);
+
 /*
   TASK 3
     - Write a Baby constructor subclassing Person.
@@ -121,9 +116,9 @@ Baby.prototype.play = function() {
   TASK 4
   In your own words explain the four principles for the "this" keyword below:
   1. this will refer to the general window when in global scope
-  2. In an object, this will refer to the object, so long as it isn't put into an arrow function.
+  2. In a function, this will refer to the object to the left of the dot when the function is called.
   3. When creating a new object through a constructor function, this will refer to the new object being created.
-  4. With the call or apply method we can bind this to a particular object instead of the new one.
+  4. With certain methods we can bind this to another object.
 */
 
 
